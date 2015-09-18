@@ -10,8 +10,18 @@
 	<!--  Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 	<!-- JavaScript -->
 	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- Font -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/overpass" rel="stylesheet" type="text/css"/>
+
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 
 
 	<title>Boris Grinberg</title>
@@ -20,29 +30,30 @@
 </head>
 <body>
 
-<!-- container-fluid -->
+<!-- Container-Fluid -->
 <section class="container-fluid" id="hero">	
 
-	<!-- nav -->
+	<!-- Nav bar -->
 	
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">BorisGrinberg</a>
+      <a class="navbar-brand hvr-underline-from-center" href="#">BorisGrinberg</a>
     </div>
     <div>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li> 
-        <li><a href="#">Contact</a></li> 
+        <li><a href="#" class="hvr-underline-from-center">About</a></li>
+        <li><a href="#" class="hvr-underline-from-center">Work</a></li> 
+        <li><a href="#" class="hvr-underline-from-center">Contact</a></li>
+        <li><a href="#" class="hvr-underline-from-center">Hire Now</a></li> 
       </ul>
     </div>
   </div>
-</nav> <!-- /nav -->
+</nav> <!-- /Nav -->
 
 
 
-	<!-- container inside #hero -->
+	<!-- Container inside #hero -->
 
 	<section class="container">
 
@@ -73,9 +84,9 @@
 				<!-- column -->
 				<div class="col-sm-12">
 						
-						<button>
-							Portfolio
-						</button>
+						<a href="#" class="hvr-grow">
+							Portfolio<i class="fa fa-arrow-down"></i>
+						</a>
 					
 					</div> <!-- /column -->
 
@@ -89,71 +100,83 @@
 	</section> <!-- /container -->
 </section> <!-- /container-fluid -->
 
-<!-- CONTAINER ABOUT SECTION -->
-<section class="container">
-	<!-- HEADER -->
-	<header><h1>ABOUT ME</h1></header>
+<!-- Container #about section-->
+<section class="container"  id="about">
+
 	
-	<!-- ROW  -->
-	<div class="row" id="about">
+	<div class="row">
+		
 
-		<!-- 2 COLUMNS -->
-		<div class="col-xs-6">
+		<h1>About</h1>
 
-			<h4>Bio</h4>
-			<p>I haven't 'Social Networked' since high school.</p>
+			
 
-		</div> <!-- /COLUMN 1 --> 
+			<!-- 2 COLUMNS -->
+			<div class="col-md-1"></div>
 
-		<div class="col-xs-6">
+			<div class="col-md-3">
+				<div id="aboutimage">
+				<img class="image-container img-circle" src="img/iconimage.jpg">
 
-			<h4>Skills</h4>
-			<ul>
-				<li>HTML/CSS</li>
-				<li>JavaScript/jQuery</li>
-				<li>Bootstrap</li>
-				<li>Ruby</li>
-			</ul>
+			</div>
+				
+
+			</div> <!-- /COLUMN 1 --> 
+
+			<div class="col-md-6">
+
+				<h4>Bio</h4>
+				<p>Graduate of General Assembly Web Development Immersive. College Graduate. Full-stack web developer with an affinity for getting things done. Up to date design trends delivered in a timely manner while being mobile friendly. I enjoy starting with a blank canvas. I haven't 'Social Networked' since high school. </p>
+				
+				<p>I am proficient with HTML5/CSS3, LESS, JavaScript, and jQuery. I have experience with Java, C++, and Ruby on Rails. </p>
+				
 
 
-		</div> <!-- /COLUMN 2 -->
+			</div> <!-- /COLUMN 2 -->
 
-	</div> <!-- /ROW -->
+		</div> <!-- /ROW -->
 
-</section> <!-- /CONTAINER ABOUT SECTION -->
+</section> <!-- /Container about section -->
 
-<!-- CONTACT ME SECTION -->
+
+<!-- Banner -->
+
+<section class="container-fluid" id="banner">
+		<h4>Contact</h4>
+	</section>
+
+<!-- Contact me section container fluid -->
 <section class="container-fluid" id="bottom">
 	
-	<!-- row -->
-	<section class="row">
-
-		<!-- column -->
-		<section class="col-xs-12">
-
-			<!-- header for section -->
-			<header>
-				<h1>Contact Me</h1>
-			</header> <!-- /header -->
-
-		</section> <!-- /column -->
-
-	</section> <!-- /row -->
+	
 	<!-- container of text input -->
 	<section class="container">
 		<!-- row for text input -->
-		<section class="row">
-
+		<div class="row">
+			<!-- Header of contact me -->
+			<div class="col-xs-12">
+				<h1>About You</h1>
+			</div>
 			<!-- column -->
-			<section class="col-xs-12" id="inputs">
-
+			<div class="col-xs-12">
 				<input type="text" placeholder="Name">
+			</div>
+			<div class="col-xs-12">
+				<input type="text" placeholder="Email">
+			</div>
+			<div class="col-xs-12">
 				<input type="text" placeholder="Phone Number">
-				<input type="text" placeholder="Comments">
+			</div>
+			<div class="col-xs-12" id="comment">
+				<input type="text" placeholder="Project Needs, Budget, and Timeline">
+			</div>
+			<div class="col-xs-12">
+				<button type="button" class="btn btn-default">Submit</button>
+			</div>
 
-			</section> <!-- /column -->
+			</div> <!-- /column -->
 
-		</section> <!-- /row of text input -->
+		</div> <!-- /row of text input -->
 
 	</section> <!-- /container of text input -->
 
